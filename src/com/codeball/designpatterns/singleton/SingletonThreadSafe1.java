@@ -16,6 +16,7 @@ public class SingletonThreadSafe1 {
 
 	public static synchronized SingletonThreadSafe1 getInstance() {
 
+		
 		SingletonThreadSafe1 result = instance;
 
 		if (result != null) {

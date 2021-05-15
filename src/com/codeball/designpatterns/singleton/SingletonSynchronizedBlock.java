@@ -6,12 +6,12 @@ package com.codeball.designpatterns.singleton;
  * @author devesh.singh
  *
  */
-public class SingletonThreadSafe2 {
+public class SingletonSynchronizedBlock {
 
-	private static volatile SingletonThreadSafe2 instance;
+	private static volatile SingletonSynchronizedBlock instance;
 	private static final Object mutex = new Object();
 
-	private SingletonThreadSafe2() {
+	private SingletonSynchronizedBlock() {
 
 	}
 
@@ -20,16 +20,16 @@ public class SingletonThreadSafe2 {
 	 * 
 	 * @return
 	 */
-	public static SingletonThreadSafe2 getInstance() {
+	public static SingletonSynchronizedBlock getInstance() {
 		// Memory optimization with result object as it will not return value from main
 		// memory(volatile) if instance is already initialized
-		SingletonThreadSafe2 result = instance;
+		SingletonSynchronizedBlock result = instance;
 
 		if (result == null) {
 			synchronized (mutex) {
 				result = instance;
 				if (result == null) {
-					instance = result = new SingletonThreadSafe2();
+					instance = result = new SingletonSynchronizedBlock();
 				}
 			}
 		}

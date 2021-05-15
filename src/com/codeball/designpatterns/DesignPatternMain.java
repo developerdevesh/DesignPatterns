@@ -1,16 +1,31 @@
 package com.codeball.designpatterns;
 
-import com.codeball.designpatterns.singleton.SingletonThreadSafe1;
+import com.codeball.designpatterns.singleton.SingletonBillPugh;
 
 public class DesignPatternMain {
 
 	public static void main(String[] args) {
+
+//		SingletonSyncronizedMethod instance1=SingletonSyncronizedMethod.getInstance();
+//		SingletonSyncronizedMethod instance2=SingletonSyncronizedMethod.getInstance();
 		
-		SingletonThreadSafe1 singletonThreadSafe1v1=SingletonThreadSafe1.getInstance();
-		SingletonThreadSafe1 singletonThreadSafe1v2=SingletonThreadSafe1.getInstance();
+//		SingletonSynchronizedBlock instance1 = SingletonSynchronizedBlock.getInstance();
+//		SingletonSynchronizedBlock instance2 = SingletonSynchronizedBlock.getInstance();
 		
-		System.out.println("Object value = "+singletonThreadSafe1v1);
-		System.out.println("Object value = "+singletonThreadSafe1v2);
+//		SingletonLazyInitialization instance1 = SingletonLazyInitialization.getInstance();
+//		SingletonLazyInitialization instance2 = SingletonLazyInitialization.getInstance();
+		
+//		SingletonEagerInitialization instance1 = SingletonEagerInitialization.getInstance();
+//		SingletonEagerInitialization instance2 = SingletonEagerInitialization.getInstance();
+		
+//		SingletonStaticBlockInitialization instance1 = SingletonStaticBlockInitialization.getInstance();
+//		SingletonStaticBlockInitialization instance2 = SingletonStaticBlockInitialization.getInstance();
+		
+		SingletonBillPugh instance1 = SingletonBillPugh.getInstance();		
+		SingletonBillPugh instance2 = SingletonBillPugh.getInstance();
+
+		System.out.println("Object value = :" + instance1);
+		System.out.println("Object value = :" + instance2);
 	}
-	
+
 }

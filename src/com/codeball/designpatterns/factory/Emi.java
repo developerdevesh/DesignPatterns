@@ -1,5 +1,11 @@
 package com.codeball.designpatterns.factory;
 
+/**
+ * EMI Transaction
+ * 
+ * @author devesh.singh
+ *
+ */
 public class Emi implements Transaction {
 
 	private Long amount;

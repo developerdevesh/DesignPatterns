@@ -1,5 +1,12 @@
 package com.codeball.designpatterns.factory;
 
+
+/**
+ * Sale Transaction
+ * 
+ * @author devesh.singh
+ *
+ */
 public class Sale implements Transaction {
 
 	private Long amount;

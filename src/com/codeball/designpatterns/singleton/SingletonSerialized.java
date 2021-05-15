@@ -3,7 +3,7 @@ package com.codeball.designpatterns.singleton;
 import java.io.Serializable;
 
 /**
- * Singleton | lazy initialization | thread safe | serialized
+ * Singleton | lazy initialization | thread safe | serialized( implement readResolve() method)
  * 
  * @author devesh.singh
  *

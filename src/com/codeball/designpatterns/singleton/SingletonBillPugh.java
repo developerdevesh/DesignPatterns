@@ -1,8 +1,7 @@
 package com.codeball.designpatterns.singleton;
 
 /**
- * Singleton with eager initialization instance is initialized at the time of
- * class loading
+ * Singleton inner class | lazy initialization | thread safe 
  * 
  * @author devesh.singh
  *

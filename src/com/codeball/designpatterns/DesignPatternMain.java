@@ -1,6 +1,6 @@
 package com.codeball.designpatterns;
 
-import com.codeball.designpatterns.singleton.SingletonBillPugh;
+import com.codeball.designpatterns.singleton.SingletonEnum;
 
 public class DesignPatternMain {
 
@@ -21,8 +21,11 @@ public class DesignPatternMain {
 //		SingletonStaticBlockInitialization instance1 = SingletonStaticBlockInitialization.getInstance();
 //		SingletonStaticBlockInitialization instance2 = SingletonStaticBlockInitialization.getInstance();
 		
-		SingletonBillPugh instance1 = SingletonBillPugh.getInstance();		
-		SingletonBillPugh instance2 = SingletonBillPugh.getInstance();
+//		SingletonBillPugh instance1 = SingletonBillPugh.getInstance();		
+//		SingletonBillPugh instance2 = SingletonBillPugh.getInstance();
+
+		SingletonEnum instance1 = SingletonEnum.INSTANCE;		
+		SingletonEnum instance2 = SingletonEnum.INSTANCE;
 
 		System.out.println("Object value = :" + instance1);
 		System.out.println("Object value = :" + instance2);

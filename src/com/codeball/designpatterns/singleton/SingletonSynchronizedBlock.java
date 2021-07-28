@@ -22,7 +22,7 @@ public class SingletonSynchronizedBlock {
 	 */
 	public static SingletonSynchronizedBlock getInstance() {
 		// Memory optimization with result object as it will not return value from main
-		// memory(volatile) if instance is already initialized
+		// memory(volatile) if instance is already initialized(The volatile prevents memory writes from being re-ordered, making it impossible for other threads to read uninitialized fields of your singleton through the singleton's pointe)
 		SingletonSynchronizedBlock result = instance;
 
 		if (result == null) {
